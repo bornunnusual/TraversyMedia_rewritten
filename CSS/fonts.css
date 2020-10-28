@@ -1,0 +1,32 @@
+@font-face {
+  font-family: momcake_bold;
+  src: url(/fonts/MOMCAKE-Bold.otf);
+}
+@font-face {
+  font-family: momcake_thin;
+  src: url(/fonts/MOMCAKE-Thin.otf);
+}
+@font-face {
+  font-family: mont_extralight;
+  src: url(/fonts/Mont-ExtraLightDEMO.otf);
+}
+@font-face {
+  font-family: mont_heavy;
+  src: url(/fonts/Mont-HeavyDEMO.otf);
+}
+@font-face {
+  font-family: BebasNeus;
+  src: url(/fonts/BebasNeue-Regular.otf);
+}
+@font-face {
+  font-family: Unique;
+  src: url(/fonts/Unique.ttf);
+}
+@font-face {
+  font-family: Monument Extended;
+  src: url(/fonts/MonumentExtended-Regular.otf);
+}
+@font-face {
+  font-family: Monument Extended_bold;
+  src: url(/fonts/MonumentExtended-Ultrabold.otf);
+}

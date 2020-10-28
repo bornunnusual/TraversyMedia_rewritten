@@ -1,0 +1,805 @@
+html,
+body {
+  scroll-behavior: smooth;
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: black;
+  overflow-x: hidden;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.tablet {
+  display: none;
+}
+hr.solid {
+  border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.5);
+}
+hr.solidv2 {
+  border-bottom: 0.5px solid rgba($color: #fff, $alpha: 1);
+}
+hr.solidv3 {
+  margin: 0 50px;
+  border-bottom: 0.5px solid rgba($color: #fff, $alpha: 1);
+}
+.pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  border: 0px;
+  height: 1px;
+  overflow: hidden;
+  background: black;
+}
+
+.pace .pace-progress {
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  max-width: 400px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+#preloader {
+  width: 100%;
+  height: 100vh;
+  background: #101010;
+  overflow: hidden;
+  position: fixed;
+  z-index: 199;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+#preloader .p {
+  position: absolute;
+  z-index: 200;
+  font-family: "Monument Extended";
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: url(/Images/Macbook_one.jpeg);
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.herooverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.nav {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 70px;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  backdrop-filter: blur(7px);
+  border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.5);
+  .navwrapper {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
+.logo {
+  width: 45px;
+  height: 45px;
+  background: url(/Images/Logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.menu {
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 0 1vw;
+      a {
+        text-decoration: none;
+        font-family: "momcake_bold";
+        font-size: 20px;
+        color: #fff;
+        transition: all 0.3s;
+        &:hover {
+          text-shadow: 0px 0px 2px white, 0 0 25px white, 0 0 5px white;
+        }
+      }
+    }
+  }
+}
+.youtube_btn {
+  width: 80px;
+  height: 45px;
+  background: url(/Images/youtube_btn.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  p {
+    color: white;
+    font-family: "momcake_bold";
+    font-size: 20px;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+  }
+}
+
+.introText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  text-align: center;
+  font-family: "momcake_bold";
+}
+.welcomeText {
+  margin-bottom: -30px;
+
+  font-family: "Avenir Next";
+  font-weight: 600;
+  line-height: 10px;
+  font-size: 18px;
+  opacity: 0.6;
+  // text-shadow: 0px 0px 2px white, 0 0 25px white, 0 0 5px white;
+}
+.introTitle {
+  font-size: 81px;
+}
+.introSubtitle {
+  margin-top: -50px;
+  font-size: 45px;
+}
+
+.udemy-title h2,
+.youtube-title h2 {
+  padding-top: 80px;
+  padding-left: 20px;
+  font-family: "Avenir Next";
+  font-weight: 500;
+  color: white;
+}
+.udemy {
+  width: 100%;
+  height: 44vw;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.youtube {
+  width: 100%;
+  height: 16vw;
+  margin-bottom: 50px;
+
+  img {
+    border: 0.2px solid rgba($color: white, $alpha: 0.7);
+    max-width: 100%;
+    height: auto;
+  }
+}
+.swiper-container,
+.youtube-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.aboutdiv {
+  padding-top: 20px;
+  .aboutme {
+    height: auto;
+    width: auto;
+    padding: 20px 20vw 0 20vw;
+    margin-top: 50px;
+    background: url("/Images/aboutme.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    h1 {
+      color: white;
+      font-family: "momcake_bold";
+      font-size: 40px;
+    }
+
+    .brad {
+      position: relative;
+      margin-top: 150px;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+      height: 210px;
+      width: 210px;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: -10px 15px 30px rgba($color: #000000, $alpha: 0.4);
+      background: url("/Images/brad.jpg");
+    }
+
+    p {
+      position: relative;
+      width: auto;
+      top: 25%;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: "Avenir Next";
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
+}
+
+.PGS {
+  padding: 70px 50px 50px 50px;
+
+  h1 {
+    color: white;
+    font-family: "mont_heavy";
+    font-size: 25px;
+  }
+
+  p {
+    color: white;
+    font-family: "Avenir";
+    font-size: 17px;
+
+    &.p2 {
+      font-weight: 800;
+    }
+  }
+
+  .PGoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .PGSBG {
+    position: relative;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+
+    &.patron {
+      padding: 20px 50px 40px 50px;
+      margin-bottom: 50px;
+      background: url("/Images/patreon_blur50.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &.guest {
+      padding: 20px 50px;
+      margin-bottom: 50px;
+      background: url("/Images/guestdoor.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &.sponsor {
+      padding: 20px 50px;
+      background: url("/Images/hand.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  button {
+    background: #f96854;
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Avenir Next";
+
+    padding: 15px 100px;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.emailsect {
+  text-align: center;
+
+  h1 {
+    color: white;
+    font-family: "momcake_bold";
+    font-size: 30px;
+  }
+  h2 {
+    color: rgba($color: #fff, $alpha: 0.5);
+    font-family: "Avenir Next";
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  p {
+    color: white;
+    font-family: "Avenir Next";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  input[type="email"],
+  select {
+    width: 60vw;
+    padding: 15px 22px;
+    display: inline-block;
+    border: none;
+
+    font-size: 16px;
+  }
+
+  ::placeholder {
+    color: black;
+    font-family: "Avenir Next";
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  button {
+    display: inline-block;
+    background: #4e4bdc;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 15px 22px;
+    transition: all 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      background: #f96854;
+      color: black;
+    }
+  }
+}
+
+.bunchofBlock {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 40px 50px 20vh 50px;
+
+  .block1 {
+    display: flex;
+    align-content: center;
+    color: white;
+    line-height: 0px;
+    font-family: "momcake_bold";
+
+    .logo {
+      margin-right: 15px;
+    }
+    .logotitle {
+      margin-top: -9px;
+    }
+  }
+
+  .rights {
+    color: white;
+    font-size: 10px;
+    font-family: "Monument Extended";
+
+    align-self: center;
+  }
+
+  .block2 {
+    // background: #dcda4b;
+    text-align: end;
+    .socialmedia {
+      // background: #dcda4b;
+      display: flex;
+      margin-top: -10px;
+      margin-bottom: -10px;
+      margin-left: -60px;
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+          margin-left: 20px;
+          a {
+            text-decoration: none;
+            font-family: "momcake_bold";
+            font-size: 18px;
+            color: #fff;
+            transition: all 0.3s;
+            &:hover {
+              text-shadow: 0px 0px 2px white, 0 0 25px white, 0 0 5px white;
+            }
+          }
+        }
+      }
+    }
+    .designer {
+      color: white;
+      font-size: 13px;
+      font-family: "Avenir Next";
+      a {
+        color: white;
+      }
+    }
+  }
+}
+//
+//
+//
+//
+//
+//
+//
+//
+
+//RESOPNSIVE--------------------------------------------------------
+
+@media only screen and (max-width: 1000px) {
+  .udemy {
+    width: 100%;
+    height: 57.5vw;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .youtube {
+    width: 100%;
+    height: 21vw;
+    margin-bottom: 50px;
+
+    img {
+      border: 0.2px solid rgba($color: white, $alpha: 0.7);
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .nav {
+    display: none;
+  }
+  .tabmenu-page {
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: transform 0.7s ease-in-out;
+
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .close_btn {
+      margin: 0 50px;
+
+      position: absolute;
+      top: 35px;
+      right: 0;
+
+      color: white;
+      text-decoration: none;
+      font-family: "momcake_bold";
+      font-size: 30px;
+    }
+    .tabmenu {
+      display: flex;
+      flex-direction: column;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+
+      ul {
+        list-style: none;
+        li {
+          padding: 3vh 2vw;
+          a {
+            text-decoration: none;
+            font-family: "momcake_bold";
+            font-size: 10vw;
+            color: #fff;
+            transition: all 0.3s;
+            &:hover {
+              text-shadow: 0px 0px 2px white, 0 0 25px white, 0 0 5px white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .active {
+    transform: translateY(0%);
+  }
+
+  .welcomeText {
+    margin-bottom: -10px;
+
+    font-family: "Avenir Next";
+    font-weight: 600;
+    line-height: 10px;
+    font-size: 15px;
+    opacity: 0.6;
+    // text-shadow: 0px 0px 2px white, 0 0 25px white, 0 0 5px white;
+  }
+  .introTitle {
+    font-size: 50px;
+  }
+  .introSubtitle {
+    margin-top: -30px;
+    font-size: 30px;
+  }
+
+  .udemy {
+    width: 100%;
+    height: 81vw;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .youtube {
+    width: 100%;
+    height: 26vw;
+    margin-bottom: 50px;
+
+    img {
+      border: 0.2px solid rgba($color: white, $alpha: 0.7);
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .rights {
+    display: none;
+  }
+  .tablet {
+    display: block;
+
+    &.nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 70px;
+
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+      );
+      backdrop-filter: blur(7px);
+      border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.5);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        margin: 0 50px;
+      }
+
+      .menu_btn {
+        margin: 0 50px;
+
+        color: white;
+        text-decoration: none;
+        font-family: "momcake_bold";
+        font-size: 30px;
+        line-height: 0px;
+        height: 0;
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  .PGS {
+    button {
+      padding: 15px 60px;
+    }
+  }
+
+  .bunchofBlock {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 50px 5vh 50px;
+
+    .block2 {
+      text-align: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 70px;
+      .socialmedia {
+        margin-left: -60px;
+      }
+      .designer {
+        color: white;
+        font-size: 13px;
+        font-family: "Avenir Next";
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .udemy {
+    width: 100%;
+    height: 91vw;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .youtube {
+    width: 100%;
+    height: 44vw;
+    margin-bottom: 50px;
+
+    img {
+      border: 0.2px solid rgba($color: white, $alpha: 0.7);
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .PGS {
+    padding: 70px 30px 50px 30px;
+
+    .PGSBG {
+      &.patron {
+        padding: 20px 30px 40px 30px;
+      }
+      &.guest {
+        padding: 20px 30px;
+      }
+      &.sponsor {
+        padding: 20px 30px;
+      }
+    }
+    button {
+      padding: 10px 10vw;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero {
+    width: 100vw;
+    height: 100vh;
+    background: url(/Images/Macbook_one.jpeg);
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .udemy {
+    width: 100%;
+    height: 135vw;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .youtube {
+    width: 100%;
+    height: 44vw;
+    margin-bottom: 50px;
+
+    img {
+      border: 0.2px solid rgba($color: white, $alpha: 0.7);
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .aboutdiv {
+    .aboutme {
+      .brad {
+        height: 180px;
+        width: 180px;
+      }
+      p {
+        top: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,872 @@
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: black;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.tablet {
+  display: none;
+}
+
+hr.solid {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+hr.solidv2 {
+  border-bottom: 0.5px solid white;
+}
+
+hr.solidv3 {
+  margin: 0 50px;
+  border-bottom: 0.5px solid white;
+}
+
+.pace {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  border: 0px;
+  height: 1px;
+  overflow: hidden;
+  background: black;
+}
+
+.pace .pace-progress {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  max-width: 400px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+#preloader {
+  width: 100%;
+  height: 100vh;
+  background: #101010;
+  overflow: hidden;
+  position: fixed;
+  z-index: 199;
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#preloader .p {
+  position: absolute;
+  z-index: 200;
+  font-family: "Monument Extended";
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: url(/Images/Macbook_one.jpeg);
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.herooverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.nav {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 70px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav .navwrapper {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  background: url(/Images/Logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin: 0 1vw;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-family: "momcake_bold";
+  font-size: 20px;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu ul li a:hover {
+  text-shadow: 0px 0px 2px white, 0 0 25px white, 0 0 5px white;
+}
+
+.youtube_btn {
+  width: 80px;
+  height: 45px;
+  background: url(/Images/youtube_btn.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.youtube_btn p {
+  color: white;
+  font-family: "momcake_bold";
+  font-size: 20px;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+
+.introText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: "momcake_bold";
+}
+
+.welcomeText {
+  margin-bottom: -30px;
+  font-family: "Avenir Next";
+  font-weight: 600;
+  line-height: 10px;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.introTitle {
+  font-size: 81px;
+}
+
+.introSubtitle {
+  margin-top: -50px;
+  font-size: 45px;
+}
+
+.udemy-title h2,
+.youtube-title h2 {
+  padding-top: 80px;
+  padding-left: 20px;
+  font-family: "Avenir Next";
+  font-weight: 500;
+  color: white;
+}
+
+.udemy {
+  width: 100%;
+  height: 44vw;
+}
+
+.udemy img {
+  max-width: 100%;
+  height: auto;
+}
+
+.youtube {
+  width: 100%;
+  height: 16vw;
+  margin-bottom: 50px;
+}
+
+.youtube img {
+  border: 0.2px solid rgba(255, 255, 255, 0.7);
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper-container,
+.youtube-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.aboutdiv {
+  padding-top: 20px;
+}
+
+.aboutdiv .aboutme {
+  height: auto;
+  width: auto;
+  padding: 20px 20vw 0 20vw;
+  margin-top: 50px;
+  background: url("/Images/aboutme.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.aboutdiv .aboutme h1 {
+  color: white;
+  font-family: "momcake_bold";
+  font-size: 40px;
+}
+
+.aboutdiv .aboutme .brad {
+  position: relative;
+  margin-top: 150px;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  border: 5px solid white;
+  -webkit-box-shadow: -10px 15px 30px rgba(0, 0, 0, 0.4);
+          box-shadow: -10px 15px 30px rgba(0, 0, 0, 0.4);
+  background: url("/Images/brad.jpg");
+}
+
+.aboutdiv .aboutme p {
+  position: relative;
+  width: auto;
+  top: 25%;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.PGS {
+  padding: 70px 50px 50px 50px;
+}
+
+.PGS h1 {
+  color: white;
+  font-family: "mont_heavy";
+  font-size: 25px;
+}
+
+.PGS p {
+  color: white;
+  font-family: "Avenir";
+  font-size: 17px;
+}
+
+.PGS p.p2 {
+  font-weight: 800;
+}
+
+.PGS .PGoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.PGS .PGSBG {
+  position: relative;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.PGS .PGSBG.patron {
+  padding: 20px 50px 40px 50px;
+  margin-bottom: 50px;
+  background: url("/Images/patreon_blur50.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.PGS .PGSBG.guest {
+  padding: 20px 50px;
+  margin-bottom: 50px;
+  background: url("/Images/guestdoor.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.PGS .PGSBG.sponsor {
+  padding: 20px 50px;
+  background: url("/Images/hand.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.PGS button {
+  background: #f96854;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Avenir Next";
+  padding: 15px 100px;
+}
+
+.PGS a {
+  color: white;
+}
+
+.emailsect {
+  text-align: center;
+}
+
+.emailsect h1 {
+  color: white;
+  font-family: "momcake_bold";
+  font-size: 30px;
+}
+
+.emailsect h2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Avenir Next";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.emailsect p {
+  color: white;
+  font-family: "Avenir Next";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.emailsect input[type="email"],
+.emailsect select {
+  width: 60vw;
+  padding: 15px 22px;
+  display: inline-block;
+  border: none;
+  font-size: 16px;
+}
+
+.emailsect ::-webkit-input-placeholder {
+  color: black;
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.emailsect :-ms-input-placeholder {
+  color: black;
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.emailsect ::-ms-input-placeholder {
+  color: black;
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.emailsect ::placeholder {
+  color: black;
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.emailsect button {
+  display: inline-block;
+  background: #4e4bdc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 15px 22px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.emailsect button:hover {
+  cursor: pointer;
+  background: #f96854;
+  color: black;
+}
+
+.bunchofBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 50px 20vh 50px;
+}
+
+.bunchofBlock .block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: white;
+  line-height: 0px;
+  font-family: "momcake_bold";
+}
+
+.bunchofBlock .block1 .logo {
+  margin-right: 15px;
+}
+
+.bunchofBlock .block1 .logotitle {
+  margin-top: -9px;
+}
+
+.bunchofBlock .rights {
+  color: white;
+  font-size: 10px;
+  font-family: "Monument Extended";
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.bunchofBlock .block2 {
+  text-align: end;
+}
+
+.bunchofBlock .block2 .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: -60px;
+}
+
+.bunchofBlock .block2 .socialmedia ul {
+  list-style: none;
+}
+
+.bunchofBlock .block2 .socialmedia ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.bunchofBlock .block2 .socialmedia ul li a {
+  text-decoration: none;
+  font-family: "momcake_bold";
+  font-size: 18px;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.bunchofBlock .block2 .socialmedia ul li a:hover {
+  text-shadow: 0px 0px 2px white, 0 0 25px white, 0 0 5px white;
+}
+
+.bunchofBlock .block2 .designer {
+  color: white;
+  font-size: 13px;
+  font-family: "Avenir Next";
+}
+
+.bunchofBlock .block2 .designer a {
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .udemy {
+    width: 100%;
+    height: 57.5vw;
+  }
+  .udemy img {
+    max-width: 100%;
+    height: auto;
+  }
+  .youtube {
+    width: 100%;
+    height: 21vw;
+    margin-bottom: 50px;
+  }
+  .youtube img {
+    border: 0.2px solid rgba(255, 255, 255, 0.7);
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav {
+    display: none;
+  }
+  .tabmenu-page {
+    overflow: hidden;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.7s ease-in-out;
+    transition: -webkit-transform 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .tabmenu-page .close_btn {
+    margin: 0 50px;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    color: white;
+    text-decoration: none;
+    font-family: "momcake_bold";
+    font-size: 30px;
+  }
+  .tabmenu-page .tabmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .tabmenu-page .tabmenu ul {
+    list-style: none;
+  }
+  .tabmenu-page .tabmenu ul li {
+    padding: 3vh 2vw;
+  }
+  .tabmenu-page .tabmenu ul li a {
+    text-decoration: none;
+    font-family: "momcake_bold";
+    font-size: 10vw;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .tabmenu-page .tabmenu ul li a:hover {
+    text-shadow: 0px 0px 2px white, 0 0 25px white, 0 0 5px white;
+  }
+  .active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .welcomeText {
+    margin-bottom: -10px;
+    font-family: "Avenir Next";
+    font-weight: 600;
+    line-height: 10px;
+    font-size: 15px;
+    opacity: 0.6;
+  }
+  .introTitle {
+    font-size: 50px;
+  }
+  .introSubtitle {
+    margin-top: -30px;
+    font-size: 30px;
+  }
+  .udemy {
+    width: 100%;
+    height: 81vw;
+  }
+  .udemy img {
+    max-width: 100%;
+    height: auto;
+  }
+  .youtube {
+    width: 100%;
+    height: 26vw;
+    margin-bottom: 50px;
+  }
+  .youtube img {
+    border: 0.2px solid rgba(255, 255, 255, 0.7);
+    max-width: 100%;
+    height: auto;
+  }
+  .rights {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  .tablet.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 70px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tablet.nav .logo {
+    margin: 0 50px;
+  }
+  .tablet.nav .menu_btn {
+    margin: 0 50px;
+    color: white;
+    text-decoration: none;
+    font-family: "momcake_bold";
+    font-size: 30px;
+    line-height: 0px;
+    height: 0;
+    cursor: pointer;
+  }
+  .PGS button {
+    padding: 15px 60px;
+  }
+  .bunchofBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 40px 50px 5vh 50px;
+  }
+  .bunchofBlock .block2 {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  .bunchofBlock .block2 .socialmedia {
+    margin-left: -60px;
+  }
+  .bunchofBlock .block2 .designer {
+    color: white;
+    font-size: 13px;
+    font-family: "Avenir Next";
+  }
+  .bunchofBlock .block2 .designer a {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .udemy {
+    width: 100%;
+    height: 91vw;
+  }
+  .udemy img {
+    max-width: 100%;
+    height: auto;
+  }
+  .youtube {
+    width: 100%;
+    height: 44vw;
+    margin-bottom: 50px;
+  }
+  .youtube img {
+    border: 0.2px solid rgba(255, 255, 255, 0.7);
+    max-width: 100%;
+    height: auto;
+  }
+  .PGS {
+    padding: 70px 30px 50px 30px;
+  }
+  .PGS .PGSBG.patron {
+    padding: 20px 30px 40px 30px;
+  }
+  .PGS .PGSBG.guest {
+    padding: 20px 30px;
+  }
+  .PGS .PGSBG.sponsor {
+    padding: 20px 30px;
+  }
+  .PGS button {
+    padding: 10px 10vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero {
+    width: 100vw;
+    height: 100vh;
+    background: url(/Images/Macbook_one.jpeg);
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .udemy {
+    width: 100%;
+    height: 135vw;
+  }
+  .udemy img {
+    max-width: 100%;
+    height: auto;
+  }
+  .youtube {
+    width: 100%;
+    height: 44vw;
+    margin-bottom: 50px;
+  }
+  .youtube img {
+    border: 0.2px solid rgba(255, 255, 255, 0.7);
+    max-width: 100%;
+    height: auto;
+  }
+  .aboutdiv .aboutme .brad {
+    height: 180px;
+    width: 180px;
+  }
+  .aboutdiv .aboutme p {
+    top: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
