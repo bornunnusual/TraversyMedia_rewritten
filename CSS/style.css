@@ -751,10 +751,10 @@ hr.solidv3 {
             align-items: center;
   }
   .tablet.nav .logo {
-    margin: 0 50px;
+    margin: 0 7vw;
   }
   .tablet.nav .menu_btn {
-    margin: 0 50px;
+    margin: 0 7vw;
     color: white;
     text-decoration: none;
     font-family: "momcake_bold";
