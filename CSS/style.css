@@ -412,6 +412,7 @@ hr.solidv3 {
   font-weight: 600;
   font-family: "Avenir Next";
   padding: 15px 100px;
+  cursor: pointer;
 }
 
 .PGS a {
