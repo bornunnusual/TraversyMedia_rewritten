@@ -73,7 +73,7 @@ hr.solidv3 {
 #preloader .p {
   position: absolute;
   z-index: 200;
-  font-family: "Monument Extended";
+  font-family: 'Monument Extended';
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -144,7 +144,7 @@ hr.solidv3 {
       margin: 0 1vw;
       a {
         text-decoration: none;
-        font-family: "momcake_bold";
+        font-family: 'momcake_bold';
         font-size: 20px;
         color: #fff;
         transition: all 0.3s;
@@ -165,7 +165,7 @@ hr.solidv3 {
   position: relative;
   p {
     color: white;
-    font-family: "momcake_bold";
+    font-family: 'momcake_bold';
     font-size: 20px;
     position: absolute;
     top: -5px;
@@ -181,12 +181,12 @@ hr.solidv3 {
 
   color: white;
   text-align: center;
-  font-family: "momcake_bold";
+  font-family: 'momcake_bold';
 }
 .welcomeText {
   margin-bottom: -30px;
 
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-weight: 600;
   line-height: 10px;
   font-size: 18px;
@@ -201,11 +201,18 @@ hr.solidv3 {
   font-size: 45px;
 }
 
-.udemy-title h2,
+.udemy-title h2 {
+  margin-top: -70px;
+  padding-top: 120px;
+  padding-left: 20px;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  color: white;
+}
 .youtube-title h2 {
   padding-top: 80px;
   padding-left: 20px;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-weight: 500;
   color: white;
 }
@@ -259,7 +266,7 @@ hr.solidv3 {
     width: auto;
     padding: 20px 20vw 0 20vw;
     margin-top: 50px;
-    background: url("/Images/aboutme.png");
+    background: url('/Images/aboutme.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,7 +274,7 @@ hr.solidv3 {
 
     h1 {
       color: white;
-      font-family: "momcake_bold";
+      font-family: 'momcake_bold';
       font-size: 40px;
     }
 
@@ -282,7 +289,7 @@ hr.solidv3 {
       border-radius: 50%;
       border: 5px solid white;
       box-shadow: -10px 15px 30px rgba($color: #000000, $alpha: 0.4);
-      background: url("/Images/brad.jpg");
+      background: url('/Images/brad.jpg');
     }
 
     p {
@@ -293,7 +300,7 @@ hr.solidv3 {
       right: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      font-family: "Avenir Next";
+      font-family: 'Avenir Next';
       font-weight: 400;
       font-size: 17px;
     }
@@ -301,17 +308,18 @@ hr.solidv3 {
 }
 
 .PGS {
-  padding: 70px 50px 50px 50px;
+  margin-top: -70px;
+  padding: 120px 50px 50px 50px;
 
   h1 {
     color: white;
-    font-family: "mont_heavy";
+    font-family: 'mont_heavy';
     font-size: 25px;
   }
 
   p {
     color: white;
-    font-family: "Avenir";
+    font-family: 'Avenir';
     font-size: 17px;
 
     &.p2 {
@@ -340,7 +348,7 @@ hr.solidv3 {
     &.patron {
       padding: 20px 50px 40px 50px;
       margin-bottom: 50px;
-      background: url("/Images/patreon_blur50.png");
+      background: url('/Images/patreon_blur50.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -349,7 +357,7 @@ hr.solidv3 {
     &.guest {
       padding: 20px 50px;
       margin-bottom: 50px;
-      background: url("/Images/guestdoor.png");
+      background: url('/Images/guestdoor.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -357,7 +365,7 @@ hr.solidv3 {
 
     &.sponsor {
       padding: 20px 50px;
-      background: url("/Images/hand.png");
+      background: url('/Images/hand.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -372,7 +380,7 @@ hr.solidv3 {
     color: white;
     font-size: 22px;
     font-weight: 600;
-    font-family: "Avenir Next";
+    font-family: 'Avenir Next';
 
     padding: 15px 100px;
     cursor: pointer;
@@ -388,25 +396,25 @@ hr.solidv3 {
 
   h1 {
     color: white;
-    font-family: "momcake_bold";
+    font-family: 'momcake_bold';
     font-size: 30px;
   }
   h2 {
     color: rgba($color: #fff, $alpha: 0.5);
-    font-family: "Avenir Next";
+    font-family: 'Avenir Next';
     font-size: 13px;
     font-weight: 400;
   }
 
   p {
     color: white;
-    font-family: "Avenir Next";
+    font-family: 'Avenir Next';
     font-size: 12px;
     font-weight: 400;
     line-height: 30px;
   }
 
-  input[type="email"],
+  input[type='email'],
   select {
     width: 60vw;
     padding: 15px 22px;
@@ -418,7 +426,7 @@ hr.solidv3 {
 
   ::placeholder {
     color: black;
-    font-family: "Avenir Next";
+    font-family: 'Avenir Next';
     font-weight: 400;
     font-size: 16px;
   }
@@ -452,7 +460,7 @@ hr.solidv3 {
     align-content: center;
     color: white;
     line-height: 0px;
-    font-family: "momcake_bold";
+    font-family: 'momcake_bold';
 
     .logo {
       margin-right: 15px;
@@ -465,7 +473,7 @@ hr.solidv3 {
   .rights {
     color: white;
     font-size: 10px;
-    font-family: "Monument Extended";
+    font-family: 'Monument Extended';
     text-align: center;
 
     align-self: center;
@@ -487,7 +495,7 @@ hr.solidv3 {
           margin-left: 20px;
           a {
             text-decoration: none;
-            font-family: "momcake_bold";
+            font-family: 'momcake_bold';
             font-size: 18px;
             color: #fff;
             transition: all 0.3s;
@@ -501,7 +509,7 @@ hr.solidv3 {
     .designer {
       color: white;
       font-size: 13px;
-      font-family: "Avenir Next";
+      font-family: 'Avenir Next';
       a {
         color: white;
       }
@@ -570,7 +578,7 @@ hr.solidv3 {
 
       color: white;
       text-decoration: none;
-      font-family: "momcake_bold";
+      font-family: 'momcake_bold';
       font-size: 30px;
     }
     .tabmenu {
@@ -589,7 +597,7 @@ hr.solidv3 {
           padding: 3vh 2vw;
           a {
             text-decoration: none;
-            font-family: "momcake_bold";
+            font-family: 'momcake_bold';
             font-size: 10vw;
             color: #fff;
             transition: all 0.3s;
@@ -608,7 +616,7 @@ hr.solidv3 {
   .welcomeText {
     margin-bottom: -10px;
 
-    font-family: "Avenir Next";
+    font-family: 'Avenir Next';
     font-weight: 600;
     line-height: 10px;
     font-size: 15px;
@@ -682,7 +690,7 @@ hr.solidv3 {
 
         color: white;
         text-decoration: none;
-        font-family: "momcake_bold";
+        font-family: 'momcake_bold';
         font-size: 30px;
         line-height: 0px;
         height: 0;
@@ -714,7 +722,7 @@ hr.solidv3 {
       .designer {
         color: white;
         font-size: 13px;
-        font-family: "Avenir Next";
+        font-family: 'Avenir Next';
         a {
           color: white;
         }

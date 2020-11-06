@@ -85,7 +85,7 @@ hr.solidv3 {
 #preloader .p {
   position: absolute;
   z-index: 200;
-  font-family: "Monument Extended";
+  font-family: 'Monument Extended';
   top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -173,7 +173,7 @@ hr.solidv3 {
 
 .menu ul li a {
   text-decoration: none;
-  font-family: "momcake_bold";
+  font-family: 'momcake_bold';
   font-size: 20px;
   color: #fff;
   -webkit-transition: all 0.3s;
@@ -196,7 +196,7 @@ hr.solidv3 {
 
 .youtube_btn p {
   color: white;
-  font-family: "momcake_bold";
+  font-family: 'momcake_bold';
   font-size: 20px;
   position: absolute;
   top: -5px;
@@ -211,12 +211,12 @@ hr.solidv3 {
           transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  font-family: "momcake_bold";
+  font-family: 'momcake_bold';
 }
 
 .welcomeText {
   margin-bottom: -30px;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-weight: 600;
   line-height: 10px;
   font-size: 18px;
@@ -232,11 +232,19 @@ hr.solidv3 {
   font-size: 45px;
 }
 
-.udemy-title h2,
+.udemy-title h2 {
+  margin-top: -70px;
+  padding-top: 120px;
+  padding-left: 20px;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+  color: white;
+}
+
 .youtube-title h2 {
   padding-top: 80px;
   padding-left: 20px;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-weight: 500;
   color: white;
 }
@@ -302,7 +310,7 @@ hr.solidv3 {
 
 .aboutdiv .aboutme h1 {
   color: white;
-  font-family: "momcake_bold";
+  font-family: 'momcake_bold';
   font-size: 40px;
 }
 
@@ -331,24 +339,25 @@ hr.solidv3 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-weight: 400;
   font-size: 17px;
 }
 
 .PGS {
-  padding: 70px 50px 50px 50px;
+  margin-top: -70px;
+  padding: 120px 50px 50px 50px;
 }
 
 .PGS h1 {
   color: white;
-  font-family: "mont_heavy";
+  font-family: 'mont_heavy';
   font-size: 25px;
 }
 
 .PGS p {
   color: white;
-  font-family: "Avenir";
+  font-family: 'Avenir';
   font-size: 17px;
 }
 
@@ -410,7 +419,7 @@ hr.solidv3 {
   color: white;
   font-size: 22px;
   font-weight: 600;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   padding: 15px 100px;
   cursor: pointer;
 }
@@ -425,26 +434,26 @@ hr.solidv3 {
 
 .emailsect h1 {
   color: white;
-  font-family: "momcake_bold";
+  font-family: 'momcake_bold';
   font-size: 30px;
 }
 
 .emailsect h2 {
   color: rgba(255, 255, 255, 0.5);
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-size: 13px;
   font-weight: 400;
 }
 
 .emailsect p {
   color: white;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-size: 12px;
   font-weight: 400;
   line-height: 30px;
 }
 
-.emailsect input[type="email"],
+.emailsect input[type='email'],
 .emailsect select {
   width: 60vw;
   padding: 15px 22px;
@@ -455,28 +464,28 @@ hr.solidv3 {
 
 .emailsect ::-webkit-input-placeholder {
   color: black;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-weight: 400;
   font-size: 16px;
 }
 
 .emailsect :-ms-input-placeholder {
   color: black;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-weight: 400;
   font-size: 16px;
 }
 
 .emailsect ::-ms-input-placeholder {
   color: black;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-weight: 400;
   font-size: 16px;
 }
 
 .emailsect ::placeholder {
   color: black;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-weight: 400;
   font-size: 16px;
 }
@@ -521,7 +530,7 @@ hr.solidv3 {
       align-content: center;
   color: white;
   line-height: 0px;
-  font-family: "momcake_bold";
+  font-family: 'momcake_bold';
 }
 
 .bunchofBlock .block1 .logo {
@@ -535,7 +544,7 @@ hr.solidv3 {
 .bunchofBlock .rights {
   color: white;
   font-size: 10px;
-  font-family: "Monument Extended";
+  font-family: 'Monument Extended';
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -566,7 +575,7 @@ hr.solidv3 {
 
 .bunchofBlock .block2 .socialmedia ul li a {
   text-decoration: none;
-  font-family: "momcake_bold";
+  font-family: 'momcake_bold';
   font-size: 18px;
   color: #fff;
   -webkit-transition: all 0.3s;
@@ -580,7 +589,7 @@ hr.solidv3 {
 .bunchofBlock .block2 .designer {
   color: white;
   font-size: 13px;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
 }
 
 .bunchofBlock .block2 .designer a {
@@ -645,7 +654,7 @@ hr.solidv3 {
     right: 0;
     color: white;
     text-decoration: none;
-    font-family: "momcake_bold";
+    font-family: 'momcake_bold';
     font-size: 30px;
   }
   .tabmenu-page .tabmenu {
@@ -669,7 +678,7 @@ hr.solidv3 {
   }
   .tabmenu-page .tabmenu ul li a {
     text-decoration: none;
-    font-family: "momcake_bold";
+    font-family: 'momcake_bold';
     font-size: 10vw;
     color: #fff;
     -webkit-transition: all 0.3s;
@@ -684,7 +693,7 @@ hr.solidv3 {
   }
   .welcomeText {
     margin-bottom: -10px;
-    font-family: "Avenir Next";
+    font-family: 'Avenir Next';
     font-weight: 600;
     line-height: 10px;
     font-size: 15px;
@@ -758,7 +767,7 @@ hr.solidv3 {
     margin: 0 7vw;
     color: white;
     text-decoration: none;
-    font-family: "momcake_bold";
+    font-family: 'momcake_bold';
     font-size: 30px;
     line-height: 0px;
     height: 0;
@@ -791,7 +800,7 @@ hr.solidv3 {
   .bunchofBlock .block2 .designer {
     color: white;
     font-size: 13px;
-    font-family: "Avenir Next";
+    font-family: 'Avenir Next';
   }
   .bunchofBlock .block2 .designer a {
     color: white;
